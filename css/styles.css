@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    background-color: #2c3e50;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+/* Container for Buttons */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Additional Utility Classes */
+.center-text {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Animation for Floating Effect */
+.floating-image {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(-50%) translateY(0); }
+    50% { transform: translateY(-50%) translateY(-10px); }
+}
